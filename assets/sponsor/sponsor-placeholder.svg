@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-labelledby="title">
+  <title id="title">Official sponsor logo placeholder</title>
+  <rect x="2" y="2" width="356" height="76" rx="18" fill="none" stroke="#6D5DFC" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="180" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#6D5DFC">OFFICIAL SPONSOR ASSET</text>
+  <text x="180" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4E5874">Replace this SVG on event day</text>
+</svg>
