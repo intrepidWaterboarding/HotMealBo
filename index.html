@@ -10,67 +10,14 @@
     <meta name="theme-color" content="#141a31" />
     <title>Hot Meal Ba — Comfort food, delivered differently.</title>
     <link rel="icon" href="assets/official/hotmealba-logo.webp" type="image/webp" />
-    <link rel="stylesheet" href="styles.css?v=5" />
-    <link rel="stylesheet" href="theme-tomato-reverie.css?v=5" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="theme-tomato-reverie.css" />
 
     <style>
-      /* V5 hard override: readable in every theme and after JavaScript theme changes. */
-      html body #page-seller .seller-intro .earning-card {
-        position: relative !important;
-        isolation: isolate !important;
-        color: #ffffff !important;
-      }
-
-      html body #page-seller .seller-intro .earning-card > .earning-label {
-        position: relative !important;
-        z-index: 5 !important;
-        display: inline-block !important;
-        width: fit-content !important;
-        padding: 7px 11px !important;
-        border: 1px solid rgba(255, 255, 255, 0.25) !important;
-        border-radius: 999px !important;
-        background: rgba(0, 0, 0, 0.46) !important;
-        color: #ffffff !important;
-        -webkit-text-fill-color: #ffffff !important;
-        font-weight: 700 !important;
-        opacity: 1 !important;
-        filter: none !important;
-        mix-blend-mode: normal !important;
-        text-shadow: 0 1px 3px #000000 !important;
-      }
-
-      html body #page-seller .seller-intro .earning-card > .earning-amount {
-        position: relative !important;
-        z-index: 5 !important;
-        color: #ffd76a !important;
-        -webkit-text-fill-color: #ffd76a !important;
-        opacity: 1 !important;
-        filter: none !important;
-        mix-blend-mode: normal !important;
-        text-shadow: 0 2px 18px rgba(255, 215, 106, 0.5) !important;
-      }
-
-      html body #page-seller .seller-intro .earning-card > .earning-note {
-        position: relative !important;
-        z-index: 5 !important;
-        display: block !important;
-        margin-top: 4px !important;
-        padding: 9px 11px !important;
-        border-left: 3px solid #ffd76a !important;
-        border-radius: 8px !important;
-        background: rgba(0, 0, 0, 0.5) !important;
-        color: #ffffff !important;
-        -webkit-text-fill-color: #ffffff !important;
-        font-weight: 600 !important;
-        line-height: 1.55 !important;
-        opacity: 1 !important;
-        filter: none !important;
-        mix-blend-mode: normal !important;
-        text-shadow: 0 1px 3px #000000 !important;
-      }
+      .earning-card .earning-amount { color: #ffd76a !important; text-shadow: 0 2px 18px rgba(255,215,106,.28); }
     </style>
-    <script defer src="data.js?v=5"></script>
-    <script defer src="app.js?v=5"></script>
+    <script defer src="data.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#mainContent">Skip to content</a>
@@ -368,10 +315,10 @@
               <span>✓ Order dashboard included</span>
             </div>
           </div>
-          <div class="earning-card" data-patch-version="V5">
-            <span class="earning-label" style="color:#ffffff !important; -webkit-text-fill-color:#ffffff !important; opacity:1 !important;">Example monthly earnings</span>
-            <strong class="earning-amount" style="color:#ffd76a !important; -webkit-text-fill-color:#ffd76a !important; opacity:1 !important;">RM 320+</strong>
-            <small class="earning-note" style="color:#ffffff !important; -webkit-text-fill-color:#ffffff !important; opacity:1 !important;">Based on 40 mixed boxes sold. Actual results vary.</small>
+          <div class="earning-card">
+            <span>Example monthly earnings</span>
+            <strong class="earning-amount">RM 320+</strong>
+            <small>Based on 40 mixed boxes sold. Actual results vary.</small>
           </div>
         </div>
 
@@ -631,40 +578,5 @@
     </div>
 
     <div class="toast-region" id="toastRegion" aria-live="polite"></div>
-  
-    <script>
-      (() => {
-        const forceEarningsReadability = () => {
-          const card = document.querySelector('#page-seller .earning-card');
-          if (!card) return;
-          const lock = (selector, rules) => {
-            const node = card.querySelector(selector);
-            if (!node) return;
-            Object.entries(rules).forEach(([property, value]) =>
-              node.style.setProperty(property, value, 'important')
-            );
-          };
-          lock('.earning-label', {
-            color: '#ffffff', '-webkit-text-fill-color': '#ffffff', opacity: '1',
-            filter: 'none', 'mix-blend-mode': 'normal', 'font-weight': '700'
-          });
-          lock('.earning-amount', {
-            color: '#ffd76a', '-webkit-text-fill-color': '#ffd76a', opacity: '1',
-            filter: 'none', 'mix-blend-mode': 'normal'
-          });
-          lock('.earning-note', {
-            color: '#ffffff', '-webkit-text-fill-color': '#ffffff', opacity: '1',
-            filter: 'none', 'mix-blend-mode': 'normal', 'font-weight': '600'
-          });
-        };
-        document.addEventListener('DOMContentLoaded', forceEarningsReadability);
-        window.addEventListener('load', forceEarningsReadability);
-        [0, 100, 500, 1200].forEach(delay => setTimeout(forceEarningsReadability, delay));
-        new MutationObserver(forceEarningsReadability).observe(document.documentElement, {
-          attributes: true,
-          attributeFilter: ['data-theme']
-        });
-      })();
-    </script>
   </body>
 </html>
