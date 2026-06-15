@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hot Meal Bar frozen dumpling ordering and student seller platform."
+    />
+    <meta name="theme-color" content="#141a31" />
+    <title>Hot Meal Bar — Dumplings, delivered differently.</title>
+    <link rel="icon" href="assets/official/hotmealba-logo.webp" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="theme-tomato-reverie.css" />
+    <script defer src="data.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#home" data-page-link="home" aria-label="Hot Meal Bar home">
+        <img src="assets/official/hotmealba-logo.webp" alt="Hot Meal Bar official logo" width="42" height="42" />
+        <span>
+          <strong>HOT MEAL BAR</strong>
+          <small>KTF & UTM Alumni</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <button class="nav-link is-active" data-page-link="home">Home</button>
+        <button class="nav-link" data-page-link="order">Order</button>
+        <button class="nav-link" data-page-link="track">Track</button>
+        <button class="nav-link" data-page-link="seller">Student Seller</button>
+        <button class="nav-link" data-page-link="dashboard">Dashboard</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <button class="cart-button" id="openCart" aria-label="Open shopping cart">
+          <span aria-hidden="true">Bag</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <section class="page is-active" id="page-home" data-page="home">
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="eyebrow">Chinese Muslim comfort food · Frozen fresh</p>
+            <h1>
+              Frozen comfort for
+              <span class="gradient-text">soft, busy days.</span>
+            </h1>
+            <p class="hero-description">
+              A warm, playful way to stock your freezer, share with friends, or build
+              a student side business—without slowing down your day.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary-button" data-page-link="order">
+                Start ordering
+                <span aria-hidden="true">→</span>
+              </button>
+              <button class="secondary-button" id="quickReorderHero">
+                Quick reorder
+              </button>
+            </div>
+
+            <div class="hero-proof" aria-label="Service highlights">
+              <div>
+                <strong>15 min</strong>
+                <span>average checkout</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>student rating</span>
+              </div>
+              <div>
+                <strong>Halal</strong>
+                <span>Muslim-friendly</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Signature steam path dumpling illustration">
+            <div class="steam-path" aria-hidden="true">
+              <span class="steam steam-one"></span>
+              <span class="steam steam-two"></span>
+              <span class="steam steam-three"></span>
+            </div>
+            <div class="official-hero-badge">
+              <img src="assets/official/hotmealba-logo.webp" alt="Official Hot Meal Bar identity" />
+              <span>Official brand</span>
+            </div>
+            <div class="promo-orbit promo-orbit-top">
+              <span>STUDENT DROP</span>
+              <strong>15% OFF</strong>
+            </div>
+            <img
+              src="assets/dumpling-hero.svg"
+              alt="A bowl of premium frozen dumplings"
+              class="hero-image"
+            />
+            <div class="promo-orbit promo-orbit-bottom">
+              <span>Free delivery</span>
+              <strong>UTM zones</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponsor-strip" aria-label="Official Hot Meal Bar brand">
+          <span>Official restaurant identity</span>
+          <img src="assets/official/hotmealba-logo.webp" alt="Hot Meal Bar official logo" />
+          <div>
+            <strong>Hot Meal Bar</strong>
+            <small>Chinese Muslim restaurant · KTF & UTM Alumni</small>
+          </div>
+        </div>
+
+
+        <section class="brand-story reveal" aria-labelledby="brandStoryTitle">
+          <div class="brand-story-copy">
+            <p class="eyebrow">A UTM food identity, reimagined</p>
+            <h2 id="brandStoryTitle">From familiar campus meals to freezer-ready convenience.</h2>
+            <p>
+              Hot Meal Bar is already known for Chinese Muslim comfort food around KTF
+              and the UTM Alumni area. This platform carries that same identity into a
+              faster frozen-dumpling ordering and student seller experience.
+            </p>
+            <div class="brand-story-tags" aria-label="Brand values">
+              <span>Chinese Muslim</span>
+              <span>Student-focused</span>
+              <span>UTM-grown</span>
+            </div>
+          </div>
+
+          <figure class="brand-story-feature">
+            <img
+              src="assets/official/signature-noodles.webp"
+              alt="Official Hot Meal Bar noodle dish served with vegetables and soup"
+              loading="lazy"
+            />
+            <figcaption>
+              <span>Official photo</span>
+              <strong>Hot Meal Bar signature noodles</strong>
+            </figcaption>
+          </figure>
+
+          <div class="brand-gallery" aria-label="Official Hot Meal Bar menu gallery">
+            <article class="brand-gallery-card">
+              <img
+                src="assets/official/beijing-noodles.webp"
+                alt="Official Beijing Noodles menu poster"
+                loading="lazy"
+              />
+              <div>
+                <span>Campus favourite</span>
+                <strong>Beijing Noodles</strong>
+              </div>
+            </article>
+            <article class="brand-gallery-card">
+              <img
+                src="assets/official/beef-dingding.webp"
+                alt="Official Fried Noodles with Beef Dingding menu poster"
+                loading="lazy"
+              />
+              <div>
+                <span>Bold flavour</span>
+                <strong>Beef Dingding</strong>
+              </div>
+            </article>
+            <article class="brand-gallery-card">
+              <img
+                src="assets/official/mee-tarik-beef-soup.webp"
+                alt="Official Mee Tarik Beef Soup menu poster"
+                loading="lazy"
+              />
+              <div>
+                <span>House classic</span>
+                <strong>Mee Tarik Beef Soup</strong>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-shell reveal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Fast decision, better meal</p>
+              <h2>Pick your freezer hero.</h2>
+            </div>
+            <button class="text-button" data-page-link="order">View full menu →</button>
+          </div>
+          <div class="quick-pick-grid" id="featuredGrid"></div>
+        </section>
+
+        <section class="value-section reveal">
+          <article>
+            <span class="value-icon">01</span>
+            <h3>Order in one flow</h3>
+            <p>Choose products, confirm your address, then complete payment clearly.</p>
+          </article>
+          <article>
+            <span class="value-icon">02</span>
+            <h3>Track every stage</h3>
+            <p>See confirmation, packing, shipment, and delivery in one visual timeline.</p>
+          </article>
+          <article>
+            <span class="value-icon">03</span>
+            <h3>Earn between classes</h3>
+            <p>Apply as a student seller and manage customer orders from one dashboard.</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="page" id="page-order" data-page="order">
+        <div class="page-hero compact">
+          <div>
+            <p class="eyebrow">Frozen dumpling catalogue</p>
+            <h1>Build your perfect box.</h1>
+            <p>Clear choices, easy quantities, and a cart that stays visible when it matters.</p>
+          </div>
+          <div class="mini-stat">
+            <span>Today</span>
+            <strong>Free delivery over RM 45</strong>
+          </div>
+        </div>
+
+        <div class="order-layout">
+          <section class="catalogue-panel">
+            <div class="filter-bar">
+              <label class="search-field">
+                <span class="sr-only">Search products</span>
+                <input id="productSearch" type="search" placeholder="Search dumplings..." />
+              </label>
+              <div class="filter-pills" id="categoryFilters" aria-label="Product categories"></div>
+              <select id="productSort" aria-label="Sort products">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: low to high</option>
+                <option value="price-high">Price: high to low</option>
+                <option value="rating">Highest rated</option>
+              </select>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+          </section>
+
+          <aside class="desktop-cart-summary" aria-label="Cart summary">
+            <div class="cart-summary-head">
+              <div>
+                <p class="eyebrow">Your selection</p>
+                <h2>Cart</h2>
+              </div>
+              <span id="desktopCartCount">0 items</span>
+            </div>
+            <div id="desktopCartItems" class="cart-items compact"></div>
+            <div class="cart-total-row">
+              <span>Total</span>
+              <strong id="desktopCartTotal">RM 0.00</strong>
+            </div>
+            <button class="primary-button full-width" id="desktopCheckout">
+              Continue to checkout
+            </button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="page-track" data-page="track">
+        <div class="page-hero compact split">
+          <div>
+            <p class="eyebrow">Live order journey</p>
+            <h1>Know exactly where it is.</h1>
+            <p>Try demo order <strong>HMB-260615-1008</strong> or submit a new order.</p>
+          </div>
+          <form class="track-search-card" id="trackForm">
+            <label for="trackInput">Order number</label>
+            <div>
+              <input id="trackInput" value="HMB-260615-1008" required />
+              <button class="primary-button" type="submit">Track</button>
+            </div>
+            <small>Example: HMB-260615-1008</small>
+          </form>
+        </div>
+
+        <div class="tracking-layout">
+          <section class="tracking-card" id="trackingResult"></section>
+          <aside class="support-card">
+            <span class="support-icon">?</span>
+            <h3>Need help?</h3>
+            <p>Our KTF team can check delivery details and settlement information.</p>
+            <button class="secondary-button" id="supportToast">Contact support</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="page-seller" data-page="seller">
+        <div class="seller-intro">
+          <div>
+            <p class="eyebrow">Student income programme</p>
+            <h1>Turn your network into pocket money.</h1>
+            <p>
+              Sell Hot Meal Bar frozen dumplings to friends, hostel mates, clubs, and
+              faculty communities—with stock and delivery handled centrally.
+            </p>
+            <div class="seller-benefits">
+              <span>✓ Flexible schedule</span>
+              <span>✓ No cooking required</span>
+              <span>✓ Order dashboard included</span>
+            </div>
+          </div>
+          <div class="earning-card">
+            <span>Example monthly earnings</span>
+            <strong>RM 320+</strong>
+            <small>Based on 40 mixed boxes sold. Actual results vary.</small>
+          </div>
+        </div>
+
+        <form class="application-form" id="sellerForm" novalidate>
+          <div class="form-heading">
+            <div>
+              <p class="eyebrow">Application</p>
+              <h2>Tell us about yourself.</h2>
+            </div>
+            <span>About 3 minutes</span>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Full name
+              <input name="fullName" autocomplete="name" required />
+              <small class="field-error"></small>
+            </label>
+            <label>
+              Matric number
+              <input name="matric" required />
+              <small class="field-error"></small>
+            </label>
+            <label>
+              UTM email
+              <input name="email" type="email" autocomplete="email" required />
+              <small class="field-error"></small>
+            </label>
+            <label>
+              WhatsApp number
+              <input name="phone" type="tel" autocomplete="tel" required />
+              <small class="field-error"></small>
+            </label>
+            <label>
+              Faculty
+              <select name="faculty" required>
+                <option value="">Choose faculty</option>
+                <option>Faculty of Computing</option>
+                <option>Faculty of Management</option>
+                <option>Faculty of Engineering</option>
+                <option>Faculty of Social Sciences and Humanities</option>
+                <option>Other</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+            <label>
+              Current residence
+              <select name="residence" required>
+                <option value="">Choose area</option>
+                <option>KTF</option>
+                <option>KTHO</option>
+                <option>KTDI</option>
+                <option>KRP</option>
+                <option>Outside UTM</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+            <label class="full-span">
+              How would you reach customers?
+              <textarea
+                name="plan"
+                rows="4"
+                minlength="20"
+                placeholder="Example: faculty WhatsApp groups, sports club, hostel..."
+                required
+              ></textarea>
+              <small class="field-error"></small>
+            </label>
+            <label class="checkbox-label full-span">
+              <input name="consent" type="checkbox" required />
+              <span>I confirm the information is accurate and agree to be contacted.</span>
+              <small class="field-error"></small>
+            </label>
+          </div>
+          <button class="primary-button" type="submit">Submit application</button>
+        </form>
+      </section>
+
+      <section class="page" id="page-dashboard" data-page="dashboard">
+        <div class="dashboard-header">
+          <div>
+            <p class="eyebrow">Seller command centre</p>
+            <h1>Order management.</h1>
+            <p>240 simulated records, optimised with filtering and pagination.</p>
+          </div>
+          <div class="dashboard-actions">
+            <button class="secondary-button" id="exportCsv">Export CSV</button>
+            <button class="primary-button" id="refreshOrders">Refresh data</button>
+          </div>
+        </div>
+
+        <div class="metric-grid" id="metricGrid"></div>
+
+        <section class="data-panel">
+          <div class="data-toolbar">
+            <label class="search-field">
+              <span class="sr-only">Search order records</span>
+              <input id="orderSearch" type="search" placeholder="Search order, delivery ID, item..." />
+            </label>
+            <select id="statusFilter" aria-label="Filter order status">
+              <option value="all">All statuses</option>
+              <option value="Confirmed">Confirmed</option>
+              <option value="Packing">Packing</option>
+              <option value="Shipped">Shipped</option>
+              <option value="Delivered">Delivered</option>
+            </select>
+            <select id="rowsPerPage" aria-label="Rows per page">
+              <option value="10">10 rows</option>
+              <option value="20">20 rows</option>
+              <option value="40">40 rows</option>
+            </select>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Delivery ID</th>
+                  <th>Ordered</th>
+                  <th>Delivery</th>
+                  <th>Items</th>
+                  <th>Settlement</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="ordersTableBody"></tbody>
+            </table>
+          </div>
+
+          <div class="mobile-order-list" id="mobileOrderList"></div>
+
+          <div class="pagination">
+            <span id="paginationInfo"></span>
+            <div>
+              <button class="icon-button" id="prevPage" aria-label="Previous page">←</button>
+              <span id="pageNumber"></span>
+              <button class="icon-button" id="nextPage" aria-label="Next page">→</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="is-active" data-page-link="home"><span>⌂</span>Home</button>
+      <button data-page-link="order"><span>◫</span>Order</button>
+      <button data-page-link="track"><span>◎</span>Track</button>
+      <button data-page-link="seller"><span>↗</span>Sell</button>
+      <button data-page-link="dashboard"><span>▦</span>Manage</button>
+    </nav>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle">
+      <div class="drawer-backdrop" data-close-cart></div>
+      <div class="drawer-panel" role="dialog" aria-modal="true">
+        <div class="drawer-header">
+          <div>
+            <p class="eyebrow">Your dumpling box</p>
+            <h2 id="cartTitle">Shopping cart</h2>
+          </div>
+          <button class="icon-button" data-close-cart aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="drawer-footer">
+          <div>
+            <span>Total</span>
+            <strong id="cartTotal">RM 0.00</strong>
+          </div>
+          <button class="primary-button full-width" id="checkoutButton">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="modal" id="checkoutModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-checkout></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+        <button class="modal-close icon-button" data-close-checkout aria-label="Close checkout">×</button>
+        <div class="checkout-progress" aria-label="Checkout progress">
+          <span class="is-active" data-step-indicator="1">1. Delivery</span>
+          <span data-step-indicator="2">2. Payment</span>
+          <span data-step-indicator="3">3. Confirmed</span>
+        </div>
+
+        <div class="checkout-step is-active" data-checkout-step="1">
+          <p class="eyebrow">Step 1</p>
+          <h2 id="checkoutTitle">Where should we send it?</h2>
+          <div class="checkout-form-grid">
+            <label>
+              Recipient name
+              <input id="checkoutName" autocomplete="name" />
+            </label>
+            <label>
+              Phone number
+              <input id="checkoutPhone" type="tel" autocomplete="tel" />
+            </label>
+            <label class="full-span">
+              Delivery address
+              <textarea id="checkoutAddress" rows="3"></textarea>
+            </label>
+            <label>
+              Delivery zone
+              <select id="checkoutZone">
+                <option value="">Choose zone</option>
+                <option>KTF / Alumni</option>
+                <option>UTM campus</option>
+                <option>Skudai</option>
+                <option>Johor Bahru</option>
+              </select>
+            </label>
+            <label>
+              Preferred date
+              <input id="checkoutDate" type="date" />
+            </label>
+          </div>
+          <p class="form-message" id="deliveryError"></p>
+          <button class="primary-button" id="toPayment">Continue to payment</button>
+        </div>
+
+        <div class="checkout-step" data-checkout-step="2">
+          <p class="eyebrow">Step 2</p>
+          <h2>Choose payment method.</h2>
+          <div class="payment-options">
+            <label>
+              <input type="radio" name="payment" value="DuitNow QR" checked />
+              <span><strong>DuitNow QR</strong><small>Fast confirmation</small></span>
+            </label>
+            <label>
+              <input type="radio" name="payment" value="Online Banking" />
+              <span><strong>Online Banking</strong><small>FPX simulation</small></span>
+            </label>
+            <label>
+              <input type="radio" name="payment" value="Cash on Delivery" />
+              <span><strong>Cash on Delivery</strong><small>Selected UTM zones</small></span>
+            </label>
+          </div>
+          <div class="checkout-summary" id="checkoutSummary"></div>
+          <div class="button-row">
+            <button class="secondary-button" id="backToDelivery">Back</button>
+            <button class="primary-button" id="confirmOrder">Confirm payment</button>
+          </div>
+        </div>
+
+        <div class="checkout-step confirmation-step" data-checkout-step="3">
+          <span class="confirmation-mark">✓</span>
+          <p class="eyebrow">Payment confirmed</p>
+          <h2>Your dumplings are officially in motion.</h2>
+          <p id="confirmationCopy"></p>
+          <div class="confirmation-code" id="confirmationCode"></div>
+          <div class="button-row">
+            <button class="secondary-button" id="copyOrderNumber">Copy order number</button>
+            <button class="primary-button" id="trackNewOrder">Track this order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  </body>
+</html>

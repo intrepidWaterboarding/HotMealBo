@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Hot Meal Bar brand mark</title>
+  <defs>
+    <linearGradient id="g" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D5DFC"/>
+      <stop offset="1" stop-color="#66D9E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="#141A31"/>
+  <path d="M15 36c0 9.4 7.6 17 17 17s17-7.6 17-17H15Z" fill="url(#g)"/>
+  <path d="M21 35c2.2-8.2 7.2-12.2 11-12.2S40.8 26.8 43 35" fill="none" stroke="#F7F6FB" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 16c-4 4 4 6 0 10M33 11c-4 5 4 7 0 12M42 16c-4 4 4 6 0 10" fill="none" stroke="#F7F6FB" stroke-width="2.6" stroke-linecap="round"/>
+</svg>
