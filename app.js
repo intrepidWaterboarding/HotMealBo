@@ -74,7 +74,7 @@
     return `
       <article class="product-card">
         <div class="product-visual">
-          <span aria-hidden="true">${product.icon}</span>
+          <img src="${product.image}" alt="${product.imageAlt || product.name}" loading="lazy" />
           <small class="product-badge">${product.badge}</small>
         </div>
         <div class="product-content">
@@ -86,7 +86,7 @@
           <div class="product-price-row">
             <div>
               <strong>${currency.format(product.price)}</strong>
-              <span> · ${product.pieces} pcs</span>
+              <span> · ${product.size}</span>
             </div>
             <button class="add-button" data-add-product="${product.id}" aria-label="Add ${product.name} to cart">+</button>
           </div>
@@ -129,7 +129,7 @@
 
     $("#productGrid").innerHTML = products.length
       ? products.map(productCard).join("")
-      : `<div class="empty-state">No dumplings match that search.</div>`;
+      : `<div class="empty-state">No menu items match that search.</div>`;
   }
 
   function addProduct(id, quantity = 1) {
@@ -156,7 +156,7 @@
       .map(
         ({ product, quantity }) => `
           <div class="cart-item">
-            <span class="cart-item-icon" aria-hidden="true">${product.icon}</span>
+            <img class="cart-item-image" src="${product.image}" alt="" />
             <div class="cart-item-info">
               <strong>${product.name}</strong>
               <small>${currency.format(product.price)} each</small>
@@ -205,7 +205,7 @@
 
   function openCheckout() {
     if (!cartItemCount()) {
-      toast("Add at least one dumpling box before checkout.");
+      toast("Add at least one menu item before checkout.");
       setPage("order");
       return;
     }
