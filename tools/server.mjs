@@ -37,6 +37,6 @@ http
     }
   })
   .listen(port, "127.0.0.1", () => {
-    console.log(`Hot Meal Bar preview running at http://127.0.0.1:${port}`);
+    console.log(`Hot Meal Ba preview running at http://127.0.0.1:${port}`);
     console.log("Press Ctrl+C to stop.");
   });

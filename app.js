@@ -592,7 +592,7 @@
         toast("Please fix the highlighted application fields.");
         return;
       }
-      toast("Application submitted. The Hot Meal Bar team will contact you.");
+      toast("Application submitted. The Hot Meal Ba team will contact you.");
       event.currentTarget.reset();
     });
 

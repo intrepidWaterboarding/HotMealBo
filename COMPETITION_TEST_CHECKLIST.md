@@ -35,7 +35,7 @@
 
 ## Brand and visual score
 
-- [x] Official Hot Meal Bar logo integrated
+- [x] Official Hot Meal Ba logo integrated
 - [x] Official brand photos and identity appear clearly
 - [ ] No dominant cliché red/yellow/green food palette
 - [ ] Hero communicates frozen dumplings immediately

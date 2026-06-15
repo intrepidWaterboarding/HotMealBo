@@ -1,7 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-title Hot Meal Bar - Local Preview
+title Hot Meal Ba - Local Preview
 
 where node >nul 2>&1
 if errorlevel 1 (

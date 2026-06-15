@@ -1,4 +1,4 @@
-# Hot Meal Bar — VibeUI Challenge 2026
+# Hot Meal Ba — VibeUI Challenge 2026
 
 A competition-ready **plain HTML/CSS/JavaScript** UI for:
 
@@ -102,11 +102,11 @@ COMPETITION_TEST_CHECKLIST.md manual QA checklist
 ```
 
 
-## Official Hot Meal Bar assets added
+## Official Hot Meal Ba assets added
 
-The v2 build integrates organiser/team-supplied Hot Meal Bar assets:
+The v2 build integrates organiser/team-supplied Hot Meal Ba assets:
 
-- Official illustrated Hot Meal Bar logo
+- Official illustrated Hot Meal Ba logo
 - Official signature noodle photo
 - Beijing Noodles poster
 - Fried Noodles with Beef Dingding poster
@@ -129,12 +129,12 @@ urban-night aesthetics:
 - Glowing timeline, badges, product cards, and mobile navigation
 
 No third-party game art, characters, logos, screenshots, or copied UI assets are included.
-Hot Meal Bar remains the only visible brand identity.
+Hot Meal Ba remains the only visible brand identity.
 
 
 ## Tomato Reverie v4
 
-This visual direction adapts a cozy tomato-daydream mood into an original Hot Meal Bar UI:
+This visual direction adapts a cozy tomato-daydream mood into an original Hot Meal Ba UI:
 
 - warm tomato red accents
 - olive leaf green

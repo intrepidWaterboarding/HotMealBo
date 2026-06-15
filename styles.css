@@ -1837,7 +1837,7 @@ td small {
 }
 
 
-/* Official Hot Meal Bar brand integration */
+/* Official Hot Meal Ba brand integration */
 .official-hero-badge {
   position: absolute;
   top: 8%;
@@ -2074,4 +2074,21 @@ td small {
   .brand-gallery {
     grid-template-columns: repeat(3, minmax(230px, 82vw));
   }
+}
+
+
+/* v2 patch: keep value section readable in dark tomato theme */
+.value-section,
+.value-section article,
+.value-section article h3,
+.value-section article strong {
+  color: #fff7f2;
+}
+
+.value-section article p {
+  color: rgba(255, 247, 242, 0.82);
+}
+
+.value-section .value-icon {
+  color: #ffd76a;
 }
